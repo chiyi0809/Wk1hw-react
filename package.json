@@ -1,0 +1,7 @@
+{
+  "name": "react-wk1",
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
