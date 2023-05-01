@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import 'antd/dist/reset.css'
 import './App.css'
 import Home from'./pages/Home'
-import { QueryClient,QueryClientProvider  } from '@tanstack/react-query';
+import { QueryClient,QueryClientProvider  } from "@tanstack/react-query"
 
 function App() {
   const queryClient = new QueryClient();
