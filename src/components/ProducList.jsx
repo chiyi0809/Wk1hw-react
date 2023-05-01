@@ -8,14 +8,14 @@ export default function ProducList({products}){
             <h1 className="text-center">IMAGES</h1>
             <hr className="divider--dark"/>
             <Row>
-                {products.map(product =>(
+                {products.map( (product , key) =>(
                     <Col 
                         sm={{span:24}}
                         lg={{span:12}}
                         xl={{span:12}}
                         xxl={{span:12}}>
 
-                        <ProductItem key={product.id} product={product} />
+                        <ProductItem key={key} product={product} />
 
                     </Col>
                 ))}

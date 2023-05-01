@@ -1,6 +1,5 @@
-import  {
-    getFirestore,collection,addDoc
-}from "firebase/firestore"
+import  {   getFirestore,collection , getDocs }from "firebase/firestore/lite"
+import {initializeApp  ,getApp  ,getApps } from "firebase/app"
 
 const firebaseConfig = {
     apiKey: "AIzaSyAANlOOuJ1fiOYlJO5WQgPTRKVkb_LsOjM",
@@ -14,7 +13,10 @@ const firebaseConfig = {
 
   const app_length=getApps().length>0;
 
-  const app=app_length ? getApp():initializeApp(firebaseConfig);
+  const app = app_length ? getApp():initializeApp(firebaseConfig);
+
+  const DBBBBBB = getFirestore(app);
+  const productsCollection= collection(DBBBBBB , "image");
 
   export const getProducts=async()=>{
     const querySnapshot = await getDocs(productsCollection);

@@ -6,7 +6,7 @@ export default function ProductItem({product}){
                     <a href="" className="image__link">
                         <img src={product.img} alt={product.place} className="image__style"/>
                     </a>
-                    <p className="image_title">{product.name}</p>
+                    <p className="image_title">{product.place}</p>
                 </div>
             </div>
         </section>
