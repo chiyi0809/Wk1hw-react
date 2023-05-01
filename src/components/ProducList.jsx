@@ -11,10 +11,10 @@ export default function ProducList({products}){
             <Row>
                 {products.map( (product , key) =>(
                     <Col 
-                        sm={{span:24}}
-                        lg={{span:12}}
-                        xl={{span:12}}
-                        xxl={{span:12}}>
+                        sm={{span:12}}
+                        lg={{span:8}}
+                        xl={{span:6}}
+                        xxl={{span:4}}>
 
                         <ProductItem key={key} product={product} />
 
