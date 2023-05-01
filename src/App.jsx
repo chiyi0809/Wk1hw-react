@@ -4,13 +4,17 @@ import reactLogo from './assets/react.svg'
 import 'antd/dist/reset.css'
 import './App.css'
 import Home from'./pages/Home'
+import { QueryClient,QueryClientProvider  } from '@tanstack/react-query';
 
 function App() {
-  return(
-  <div>
+  const queryClient = new QueryClient();
+
+
+  return (
+    <QueryClientProvider client={queryClient}>
     <Home/>
-  </div>
-  )
+    </QueryClientProvider>
+  );
 }
 
 export default App
