@@ -2,6 +2,7 @@ import ProductItem from "./ProductItem.jsx"
 
 import { Row,Col } from "antd"
 
+
 export default function ProducList({products}){
     return(
         <div className="row">
